@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
 ## Description
-The project uses the inquirer module to request information from the user in order to generate a README file. It automates the generation of sections and table of contents thereby simplifying README file creation.
+The project uses the inquirer module to request information from the user to generate a README file. It automates the generation of sections and table of contents, simplifying README file creation.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -18,7 +18,7 @@ The project uses the inquirer module to request information from the user in ord
 Clone the project and run the "npm install" command in the root directory of the "index.js" file.
 
 ## Usage
-Run the "node index.js" command and follow the prompts.
+Run the "node index.js" command and follow the prompts. The README file is generated in the "output" directory.
 
 ## License
 This project is licensed under the MIT License.
