@@ -55,11 +55,31 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    const outputPath = path.join(__dirname, 'output', fileName);
+  
+    // Ensure the directory exists
+    const outputDir = path.dirname(outputPath);
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+  
+    // Write content to file
+    fs.writeFileSync(outputPath, data);
+  
+    console.log(`File created: ${outputPath}`);
 }
 
 // function to initialize program
 function init() {
-
+    inquirer
+    .prompt(questions)
+    .then((answers) => {
+      const markdownContent = generateMarkdown(answers);
+      const outputFilePath = path.join(__dirname, "output", "README.md");
+      writeToFile(outputFilePath, markdownContent);
+      console.log(`README.md has been generated successfully at ${outputFilePath}`);
+    })
+    .catch((error) => console.error("Error during inquirer prompt:", error));
 }
 
 // function call to initialize program
