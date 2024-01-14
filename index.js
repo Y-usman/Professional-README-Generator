@@ -75,7 +75,7 @@ function init() {
     .prompt(questions)
     .then((answers) => {
       const markdownContent = generateMarkdown(answers);
-      const outputFilePath = path.join(__dirname, "output", "README.md");
+      const outputFilePath = path.join("output", "README.md");
       writeToFile(outputFilePath, markdownContent);
       console.log(`README.md has been generated successfully at ${outputFilePath}`);
     })
