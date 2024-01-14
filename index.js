@@ -55,7 +55,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    const outputPath = path.join(__dirname, 'output', fileName);
+    const outputPath = path.join(__dirname, fileName);
   
     // Ensure the directory exists
     const outputDir = path.dirname(outputPath);
