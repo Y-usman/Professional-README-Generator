@@ -1,10 +1,10 @@
 
-# Professional README Generator - Yusuf Usman
+# Sample README file
 
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
 ## Description
-The project uses the inquirer module to request information from the user in order to generate a README file. It automates the generation of sections and table of contents thereby simplifying README file creation.
+This is a sample README file to be generated for demonstration purposes.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -15,7 +15,7 @@ The project uses the inquirer module to request information from the user in ord
 - [Questions](#questions)
 
 ## Installation
-Clone the project and run the "npm install" command in the root directory of the "index.js" file.
+Git clone the repo. While in the root folder of this project, Run "npm install" command.
 
 ## Usage
 Run the "node index.js" command and follow the prompts.
