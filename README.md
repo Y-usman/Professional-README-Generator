@@ -6,6 +6,9 @@
 ## Description
 The project uses the inquirer module to request information from the user in order to generate a README file. It automates the generation of sections and table of contents thereby simplifying README file creation.
 
+## Screenshots
+![SAMPLE README screenshot](/assets/Screenshot.png)
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
